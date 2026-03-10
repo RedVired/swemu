@@ -1,0 +1,30 @@
+{
+  "name": "swemu",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "swemu — это настраиваемая среда выполнения для микроконтроллеров Stormworks SWLua и симуляции связи между ними.",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedVired/swemu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RedVired/swemu/issues"
+  },
+  "homepage": "https://github.com/RedVired/swemu#readme",
+  "dependencies": {
+    "fengari": "^0.1.5"
+  }
+}
