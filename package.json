@@ -1,6 +1,6 @@
 {
   "name": "swemu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "description": "swemu — это настраиваемая среда выполнения для микроконтроллеров Stormworks SWLua и симуляции связи между ними.",
   "main": "src/index.js",
