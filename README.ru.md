@@ -28,6 +28,8 @@ import * as swemu from “swemu”
     { from: "a", to: "b" },
     { from: "b", to: "a" },
   ],
+  log: { console: true, bus: false },
+  simulation: {tickHz: 60}
 }
 ```
 
@@ -84,6 +86,13 @@ const sim = swemu.SWSimulator(config)
 sim.run({log: true})
 ```
 
+# Добавленный lua api
+- `print()`
+- `getNumber(index, value)`
+- `getBool(index, value)`
+- `setNumber(index, value)`
+- `setBool(index, value)`
+api соответствует pony ide api
 # Отсутствующие функции
 - cli-утилита
 - yaml/yml конфигурация
