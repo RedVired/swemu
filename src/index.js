@@ -342,7 +342,7 @@ export class SWSimulator {
       console.log(this.buses);
     }
 
-    setTimeout(() => this.run({ log }), 1000 / this.tickHz);
+    setTimeout(() => this.run(), 1000 / this.tickHz);
   }
 
   runInterval(steps = 10) {
