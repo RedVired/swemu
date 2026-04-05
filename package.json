@@ -1,14 +1,21 @@
 {
-  "name": "swemu",
-  "version": "0.0.3",
+  "name": "composite-core",
+  "version": "0.0.5",
   "type": "module",
   "description": "swemu — это настраиваемая среда выполнения для микроконтроллеров Stormworks SWLua и симуляции связи между ними.",
   "main": "src/index.js",
+  "bin": {
+    "swemu": "src/cli.js"
+  },
   "files": [
     "src"
   ],
   "directories": {
     "test": "tests"
+  },
+  "exports": {
+    "./swemu": "./swemu.js",
+    "./bundler": "./bundler.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,12 +26,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/RedVired/swemu/issues"
+    "url": "https://github.com/RedVired/composite-core/issues"
   },
-  "homepage": "https://github.com/RedVired/swemu#readme",
+  "homepage": "https://github.com/RedVired/composite-core",
   "dependencies": {
-    "fengari": "^0.1.5"
+    "commander": "^14.0.3",
+    "fengari": "^0.1.5",
+    "js-yaml": "^4.1.1"
   }
 }

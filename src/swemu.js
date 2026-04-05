@@ -1,4 +1,3 @@
-// swemu.js (ESM)
 import fs from "node:fs";
 import { lua, lauxlib, lualib, to_luastring, to_jsstring } from "fengari";
 

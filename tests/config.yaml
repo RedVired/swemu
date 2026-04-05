@@ -1,0 +1,13 @@
+services:
+  a: { filePath: "./a.lua" }
+  b: { filePath: "./b.lua" }
+links:
+  - from: "a"
+    to: "b"
+  - from: "b"
+    to: "a"
+log:
+  console: true
+  bus: true
+simulation:
+  tickHz: 10
